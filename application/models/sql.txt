@@ -1,0 +1,19 @@
+
+  //////////////////////////////
+ // Database Name innsightdb //
+//////////////////////////////
+
+
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `fname` varchar(20) NOT NULL,
+  `lname` varchar(20) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `mobile` decimal(10,0) unsigned NOT NULL,
+  `gender` varchar(10) NOT NULL,
+  `state` varchar(50) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4
